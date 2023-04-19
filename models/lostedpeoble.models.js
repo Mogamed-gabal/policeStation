@@ -16,7 +16,7 @@ const schema=mongoose.Schema({
 
 });
 schema.post("init",function (doc){
-    doc.img="http://localhost:3000/"+doc.img
+    doc.img="https://policia.onrender.com/"+doc.img
     console.log(doc)
 
 })
