@@ -16,7 +16,7 @@ module.exports.sendEmails=async (options)=>{
         subject: "Hello ✔", // Subject line
         text: "Hello world?", // plain text body
         html:`<h1>${options.message}</h1>
-        <a href='http://localhost:3000/users/verify/${options.token}'>verify your account</a> 
+        <a href='https://policia.onrender.com/users/verify/${options.token}'>verify your account</a> 
         `
        , // html body
       },(err,info)=>{
