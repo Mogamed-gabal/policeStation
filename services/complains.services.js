@@ -8,7 +8,7 @@ function catchErrore(service){
 }
 module.exports.addComplian=catchErrore(async(req,res)=>{
     const{full_name,email,type,texterea}=req.body
-    const complain=await compliansModels.insertMany({complainImg:req.file.filename,full_name,email,type,texterea})
+    const complain=await compliansModels.insertMany({full_name,email,type,texterea,complainImg:req.file.filename})
     res.json({message:"success",complain})
 })
 module.exports.getAllComplains=catchErrore(async(req,res)=>{
