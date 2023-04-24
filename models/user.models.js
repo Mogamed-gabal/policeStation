@@ -24,7 +24,7 @@ const schema=mongoose.Schema({
     timestemps:true
 })
 schema.post("init",function (doc){
-    doc.user_img="http://localhost:3000/"+doc.user_img
+    doc.user_img=doc.user_img
   
 
 })
