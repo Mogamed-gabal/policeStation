@@ -48,7 +48,7 @@ module.exports.signIn=catchErrore(async(req,res)=>{
             let token=jwt.sign({role:"user",_id:user._id,userName:user.full_name,userMail:user.email,userAddress:user.address,user_phone:user.phone_number,user_Jop:user.jop,national_id:user.national_id,img:user.user_img},'onlinepolicestations')
             if(user.verfied==true)
             {
-                res.json({message:"login success",token})
+                res.json({message:"login success",token,user})
             }else
             {
                 res.json({message:"verfiy your account first"})
