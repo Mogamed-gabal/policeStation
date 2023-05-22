@@ -6,7 +6,7 @@ const app=require('express').Router()
 
 
 
-app.post('/addComplain',uploadImg('complainImg'),complaincValidations,addComplian)
+app.post('/addComplain',complaincValidations,addComplian)
 app.get('/allComplains',getAllComplains)
 app.get('/complainDetails/:_id',getComplainDetails)
 app.get('/userComplains/:email',getUserComplains)
