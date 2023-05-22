@@ -5,8 +5,7 @@ const schema=mongoose.Schema({
     full_name:String,
     email:String,
     type:String,
-    texterea:String,
-    complainImg:String
+    texterea:String
 },{
     teimestemps:true,
 })
