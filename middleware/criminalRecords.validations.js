@@ -9,6 +9,7 @@ const schema=Joi.object({
         email:Joi.string().required(),
         numberOfRaw:Joi.string().required(),
         national_id:Joi.string().required(),
+          referTO:Joi.string().required(),
 })
 module.exports.crimialrecordsValidations=async (req,res,next)=>{
     let msgArray=[]
