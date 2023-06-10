@@ -5,7 +5,7 @@ const { haveAset, getAllSets } = require('../services/criminalrecords.services')
 
 const app=require('express').Router()
 
-app.post('/takeAnum',haveAset)
+app.post('/takeAnum',crimialrecordsValidations,haveAset)
 app.get('/getAllSets ',getAllSets)
 
 
